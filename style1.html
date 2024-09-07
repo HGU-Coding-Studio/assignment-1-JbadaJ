@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+.container {
+        display: flex;
+        height: 350px;
+        width: 100%;
+        justify-content: space-between;
+}
+
+#top{
+    color: dodgerblue;
+    border-radius: 4px;
+    background-color: aquamarine;
+    width: 100%;
+}
+.menuitem{
+    
+    width: 100%;
+    height: 30px;
+    background-color: antiquewhite;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+}
+#left{
+    width: 15%;
+}
+#right{
+    background-color: aqua;
+    width: 15%;
+}
+#main{
+    width: 70%;
+    margin-left: 10px;
+}
+ul {
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+}
+li{
+    margin-top: 5px;
+}
+#right h3,p{
+    padding-left: 5px;
+}
+#last{
+    background-color:#f0f0f0;
+}
+#last p{
+    font-size: 13px;
+    text-align: center;
+}
+button:hover {
+    background-color: #45a049;
+}
+.menuitem-btn {
+    width: 100%; 
+    height: 30px; 
+    background-color: antiquewhite; 
+    border-radius: 8px; 
+    display: flex; 
+    justify-content:  flex-start;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+</style>
+<body>
+    <div id="top">
+        <h1>Welcome to bada's Homepage</h1>    
+        <p>Use the menu to select different Stylesheets</p>
+    </div>
+    <div class="container">
+       
+    <div id="left">
+        <ul>
+            <li><button class="menuitem-btn" onclick="window.location.href='style1.html'">Stylesheet 1</button></li>
+            <li><button class="menuitem-btn" onclick="window.location.href='style2.html'">Stylesheet 2</button></li>    
+            <li><button class="menuitem-btn" onclick="window.location.href='style1.html'">Stylesheet 3</button></li>    
+            <li><button class="menuitem-btn" onclick="window.location.href='style1.html'">Stylesheet 4</button></li>
+            <li><button class="menuitem-btn" onclick="window.location.href='index.html'">No Stylesheet</button></li>
+        </ul>
+    </div>
+
+    <div id="main">
+        <h1>Page Different Stylesheets</h1>
+        <p>
+        This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links:
+        </p>
+        <p><a href="style1.html">Stylesheet1,</a> <a href="style2.html">Stylesheet2,</a> Stylesheet3, Stylesheet4.</p>
+        
+        <h2>No Styles</h2>
+        <p>
+        This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks like with no stylesheet:
+        </p>
+        <p><a href="index.html">No Stylesheet.</a></p>
+    </div>
+
+    <div id="right">
+        <h3>Side-Bar</h3>
+        <p>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+        </p>
+    </div>
+
+    </div>
+    <div id="last">
+        <p>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+        </p>
+    </div>
+</body>
+</html>
